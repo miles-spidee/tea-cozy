@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: seashell;
+    background-color: black;
+}
+
+/* Navigation */
+
+nav {
+    background-color: black;
+    padding: 9px 10px;
+    border-bottom: 1px solid seachell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.3px white;
+}
+
+nav > img {
+    height: 50px;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: seashell;
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    margin: 0px 40px;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+/* Mission bg */
+
+#mission {
+    height: 85vh; 
+    background-image: url(/resource/img/mission-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-content: center;
+    background-position: center;
+    margin: 30px 0;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    line-height: 25px;
+    width: 100%;
+}
+
+.title h2 {
+    padding-bottom: 20px;
+}
+
+/* Product */
+#featured-product{
+    height:100vh;
+    max-width:1000px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.product > img{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+/* location */
+
+#location {
+    height: 500px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/resource/img/locations-background.webp);
+    width: 100%;
+}
+
+#location h1{
+    height: 10%;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.containers {
+    display: flex;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.containers .container {
+    background-color: rgb(0, 0, 0 , 0.8);
+    width: 300px;
+    border-radius: 20px;
+    border: burlywood solid 7px;
+    height: 200px;
+    margin: 50px 20px;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.container h2 {
+    padding-bottom: 30px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer > h1 , footer > h5{
+    margin: 30px;
+}
+
+#copyright {
+    text-align: left;
+    position: relative;
+    top:50px;
+    margin: 20px;
+}
