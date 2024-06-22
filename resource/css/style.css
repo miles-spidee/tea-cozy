@@ -36,12 +36,17 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding: 10px;
+    border-bottom: 2px solid transparent; /* Initial border setup */
+  transition: border-bottom 0.3s ease ,  padding-bottom 0.3 ease-in; 
 }
 
 nav ul li a{
+    padding: 10px;
     color: seashell;
-    text-decoration: underline;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #cee900;
+    padding-bottom: 3px;
 }
 
 /* Main */
