@@ -59,7 +59,7 @@ section {
 
 #mission {
     height: 85vh; 
-    background-image: url(/resource/img/mission-background.webp);
+    background-image: url(../img/mission-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -112,7 +112,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(/resource/img/locations-background.webp);
+    background-image: url(../img/locations-background.webp);
     width: 100%;
 }
 
