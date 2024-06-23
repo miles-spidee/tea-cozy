@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: Helvetica, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     color: seashell;
     background-color: black;
 }
@@ -26,27 +26,37 @@ nav {
     box-shadow: 0 0.3px white;
 }
 
-nav > img {
+nav>img {
     height: 50px;
 }
 
-nav ul{
+nav ul {
     float: right;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
-    border-bottom: 2px solid transparent; /* Initial border setup */
-  transition: border-bottom 0.3s ease ,  padding-bottom 0.3 ease-in; 
+    border-bottom: 2px solid transparent;
 }
 
-nav ul li a{
-    padding: 10px;
+nav ul li a {
     color: seashell;
+    padding: 10px 10px;
+    margin-right: 20px;
 }
-nav ul li:hover{
+
+nav ul li a:hover {
     border-bottom: 2px solid #cee900;
-    padding-bottom: 3px;
+    position: relative;
+    top: -3px;
+    transition: topn 0.1s ease-in , border-bottom 0.1s ease-in;
+}
+
+nav ul li a:active {
+    color: black;
+    background-color: #cee900;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Main */
@@ -63,7 +73,7 @@ section {
 /* Mission bg */
 
 #mission {
-    height: 85vh; 
+    height: 85vh;
     background-image: url(../img/mission-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,9 +96,9 @@ section {
 }
 
 /* Product */
-#featured-product{
-    height:100vh;
-    max-width:1000px;
+#featured-product {
+    height: 100vh;
+    max-width: 1000px;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -96,14 +106,14 @@ section {
     align-content: center;
 }
 
-.product{
+.product {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 
-.product > img{
+.product>img {
     height: 200px;
     width: 300px;
     margin: 10px;
@@ -121,7 +131,7 @@ section {
     width: 100%;
 }
 
-#location h1{
+#location h1 {
     height: 10%;
     text-shadow: 2px 2px black;
     font-size: 40px;
@@ -136,7 +146,7 @@ section {
 }
 
 .containers .container {
-    background-color: rgb(0, 0, 0 , 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     width: 300px;
     border-radius: 20px;
     border: burlywood solid 7px;
@@ -156,13 +166,14 @@ footer {
     text-align: center;
 }
 
-footer > h1 , footer > h5{
+footer>h1,
+footer>h5 {
     margin: 30px;
 }
 
 #copyright {
     text-align: left;
     position: relative;
-    top:50px;
+    top: 50px;
     margin: 20px;
 }
